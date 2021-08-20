@@ -10,6 +10,11 @@
     {
       "name": "lastName",
       "type": "string"
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "default": "unknown"
     }
   ]
 }

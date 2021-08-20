@@ -24,7 +24,8 @@ public class ProducerApplication {
 		return new CommandLineRunner() {
 			@Override
 			public void run(String... args) throws Exception {
-				User user = User.newBuilder().setFirstName("Abhishek").setLastName("Paithane").build();
+				User user = User.newBuilder().setFirstName("Abhishek").setLastName("Paithane").setEmail("abhishekpaithane@gmail.com")
+				.build();
 				ProducerRecord record = new ProducerRecord("test12345","key123", user);
 				kafkaProducer.send(record);
 			}
