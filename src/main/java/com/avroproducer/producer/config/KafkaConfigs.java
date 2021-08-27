@@ -20,6 +20,7 @@ public class KafkaConfigs {
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
         properties.put(KafkaAvroSerializerConfig.SCHEMA_REGISTRY_URL_CONFIG, "http://localhost:8081");
         properties.put(KafkaAvroSerializerConfig.AUTO_REGISTER_SCHEMAS, true);
+
         properties.put("use.latest.version", true);
         KafkaProducer kafkaProducer = new KafkaProducer(properties);
         return kafkaProducer;
